@@ -3,20 +3,33 @@ pipeline{
     agent any
 
     stages {
-        stage ("build") {
-            echo "build succesfull"
-        }
+        stage ("Build") {
+            steps{
+                echo "Build succesfull"
+            }
+            
+        
 
-        stage ("deploy") {
-            echo "deployinggggggg"
+        stage ("Deploy") {
+             steps{
+                echo "Deployed  succesfull"
+            }
+            
+            
         }
 
         stage ("Test") {
-            echo " Testing Successfull"
+             steps{
+                echo "Test Successfull"
+            }
+            
         }
 
         stage ("Release") {
-            echo " Successfullt released initital version 1.0"
+             steps{
+                echo " Initial version released"
+            }
+            
         }
     }
 }
