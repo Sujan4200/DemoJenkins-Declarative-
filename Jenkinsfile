@@ -1,5 +1,5 @@
 
-pipeline{
+pipeline {
     agent any
 
     stages {
@@ -7,13 +7,14 @@ pipeline{
             steps{
                 echo "Build succesfull"
             }
-            
+        }
         
 
         stage ("Deploy") {
              steps{
                 echo "Deployed  succesfull"
             }
+        
             
             
         }
@@ -33,5 +34,5 @@ pipeline{
         }
     }
 }
-}
-}
+ 
+
